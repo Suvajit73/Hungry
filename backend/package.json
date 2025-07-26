@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "vercel-build": "echo 'Ready for Vercel'"
+    "start": "nodemon server.js"
+    
   },
   "author": "",
   "license": "ISC",
