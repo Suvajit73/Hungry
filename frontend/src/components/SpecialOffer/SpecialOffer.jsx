@@ -14,7 +14,7 @@ const SpecialOffer = () => {
 
     //Fetch Menu
     useEffect(() => {
-        axios.get('http://localhost:4000/api/items')
+        axios.get('https://hungry-backend-jomb.onrender.com/api/items')
         .then(res => setItems(res.data.items ?? res.data))
         .catch(err => console.error(err));
     }, [])

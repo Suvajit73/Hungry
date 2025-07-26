@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useCart } from '../../CartContext/CartContext'
 import { FaMinus, FaPlus, FaTimes, FaTrash } from "react-icons/fa";
 
-const API_URL = 'http://localhost:4000'
+const API_URL = 'https://hungry-backend-jomb.onrender.com'
 
 const CartPage = () => {
 

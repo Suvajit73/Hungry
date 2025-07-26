@@ -30,7 +30,7 @@ const VerifyPaymentPage = () => {
     }
 
     //Stripe success = true
-    axios.get('http://localhost:4000/api/orders/confirm', {
+    axios.get('https://hungry-backend-jomb.onrender.com/api/orders/confirm', {
       params: { session_id },
       headers: authHeaders
     })
