@@ -9,7 +9,7 @@ import IA2 from './IA2.png';
 import IA3 from './IA3.png';
 import IA4 from './saikat.jpg';
 import IA5 from './suva.jpg';
-import IA6 from './subam.jpg';
+import IA6 from './subham.jpg';
 
 import Kebab from "./Kebab.png";
 import ChickenTikka from "./ChickenTikka.png";
