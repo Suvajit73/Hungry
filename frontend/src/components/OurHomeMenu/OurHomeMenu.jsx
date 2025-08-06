@@ -14,7 +14,7 @@ const OurHomeMenu = () => {
     const [menuData, setMenuData] = useState({});
 
     useEffect(() => {
-        axios.get('https://hungry-sage.vercel.app/api/items')
+        axios.get('https://hungry-backend-jomb.onrender.com/api/items')
         .then(res => {
             const grouped = res.data.reduce((acc, item) => {
                 acc[item.category] = acc[item.category] || [];
