@@ -53,7 +53,7 @@ const AddItems = () => {
       });
 
       const res = await axios.post(
-        'https://hungry-sage.vercel.app/api/items',
+        'https://hungry-backend-jomb.onrender.com/api/items',
         payload,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
