@@ -31,7 +31,7 @@ const Checkout = () => {
       setLoading(true);
 
       if (paymentStatus === 'success' && sessionId) {
-        axios.post('https://hungry-backend-jomb.onrender.com/api/orders/confirm',
+        axios.post('https://hungry-sage.vercel.app/api/orders/confirm',
           { sessionId },
           { headers: authHeaders })
           .then(({ data }) => {
@@ -81,7 +81,7 @@ const Checkout = () => {
     try {
       if (formData.paymentMethod === 'online') {
         const { data } = await axios.post(
-          'https://hungry-backend-jomb.onrender.com/api/orders',
+          'https://hungry-sage.vercel.app/api/orders',
           payload,
           { headers: authHeaders }
         );
@@ -89,7 +89,7 @@ const Checkout = () => {
       } else {
         //COD
         const { data } = await axios.post(
-          'https://hungry-backend-jomb.onrender.com/api/orders',
+          'https://hungry-sage.vercel.app/api/orders',
           payload,
           { headers: authHeaders }
         );

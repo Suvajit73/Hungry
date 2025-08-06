@@ -4,7 +4,7 @@ import { iconClass, inputBase } from '../../assets/dummydata';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const url = 'https://hungry-backend-jomb.onrender.com'
+const url = 'https://hungry-sage.vercel.app'
 
 const Login = ({ onLoginSuccess, onClose }) => {
 

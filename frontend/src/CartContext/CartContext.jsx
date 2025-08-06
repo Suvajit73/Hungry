@@ -53,7 +53,7 @@ export const CartProvider = ({ children }) => {
     //Hydrate From Server API
     useEffect(() => {
         const token = localStorage.getItem('authToken')
-        axios.get('https://hungry-backend-jomb.onrender.com/api/cart', {
+        axios.get('https://hungry-sage.vercel.app/api/cart', {
             withCredentials: true,
             headers: { Authorization: `Bearer ${token}` },
         })
@@ -67,7 +67,7 @@ export const CartProvider = ({ children }) => {
     const addToCart = useCallback(async (item, qty) => {
         const token = localStorage.getItem('authToken')
         const res = await axios.post(
-            'https://hungry-backend-jomb.onrender.com/api/cart',
+            'https://hungry-sage.vercel.app/api/cart',
             { itemId: item._id, quantity: qty },
             {
                 withCredentials: true,
@@ -81,7 +81,7 @@ export const CartProvider = ({ children }) => {
     const removeFromCart = useCallback(async _id => {
         const token = localStorage.getItem('authToken')
         await axios.delete(
-            `https://hungry-backend-jomb.onrender.com/api/cart/${_id}`,
+            `https://hungry-sage.vercel.app/api/cart/${_id}`,
             {
                 withCredentials: true,
                 headers: { Authorization: `Bearer ${token}` }
@@ -93,7 +93,7 @@ export const CartProvider = ({ children }) => {
     const updateQuantity = useCallback(async (_id, qty) => {
         const token = localStorage.getItem('authToken')
         const res = await axios.put(
-            `https://hungry-backend-jomb.onrender.com/api/cart/${_id}`,
+            `https://hungry-sage.vercel.app/api/cart/${_id}`,
             { quantity: qty },
             {
                 withCredentials: true,
@@ -106,7 +106,7 @@ export const CartProvider = ({ children }) => {
     const clearCart = useCallback(async () => {
         const token = localStorage.getItem('authToken')
         await axios.post(
-            'https://hungry-backend-jomb.onrender.com/api/cart/clear',
+            'https://hungry-sage.vercel.app/api/cart/clear',
             {},
             {
                 withCredentials: true,
